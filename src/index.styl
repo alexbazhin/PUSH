@@ -3,7 +3,6 @@ body
   padding 0
   background linear-gradient(-15deg, #0465AA, #0465AA, #03CDF6, #03CDF6) no-repeat
   background-size 100% 100%
-  //overflow hidden
 
 .upper_layer
   position relative
@@ -18,7 +17,7 @@ body
 .top_block
   width 100%
 
-.top_block__current_song
+#name-of-the-song-that-plays
   display inline-block
   float left
   font-family Arial, sans-serif
@@ -55,13 +54,31 @@ body
 .jp-controls a
   color #fff
 
-.jp-play,.jp-pause
-  width 60px
-  height 40px
+.jp-play,
+.jp-pause
+  width 140px
+  height 140px
   display inline-block
   text-align center
   line-height 43px
+
+.jp-play
   background url(/img/button_play.png) no-repeat
+
+.jp-pause
+  background url(/img/button_pause.png) no-repeat
+
+.jp-previous,
+.jp-next
+  width 160px
+  height 100px
+  display inline-block
+
+.jp-previous
+  background url(/img/button_prev.png) no-repeat
+
+.jp-next
+  background url(/img/button_next.png) no-repeat
 
 .jp-mute,.jp-unmute
   width 20px
@@ -79,40 +96,42 @@ body
   text-shadow 1px 1px 0 rgba(0,0,0,0.3)
 
 .jp-progress
-  background-color white
+  background-color #cecece
   border-radius 20px 20px 20px 20px
-  overflow hidden
   width 100%
   box-shadow 0 1px 1px 0 rgba(0,0,0,0.2) inset
 
 .jp-play-bar
-  height 12px
-  background-color red
-  box-shadow 10px white
+  height 7px
+  background-color white
+  box-shadow 0 0 20px white
   border-radius 20px 20px 20px 20px
 
 .jp-volume-bar
   width 50%
-  height 8px
+  height 5px
   border-radius 20px 20px 20px 20px
   box-shadow 0 1px 1px 0 rgba(0,0,0,0.1) inset
-  background-color #992E18
-  overflow hidden
+  background-color #cecece
 
 .jp-volume-bar-value
   background-color #fff
-  height 8px
+  height 5px
   border-radius 20px 20px 20px 20px
+  box-shadow 0 0 20px white
 
 .jp-playlist
-  width 35%
+  width 40%
   height 270px
   overflow-y scroll
 
-.jp-playlist ul li
+.jp-playlist-item
   color white
+  text-decoration none
+
+.jp-playlist ul li
+  list-style-type none
 
 .discription
   display none
-
 
